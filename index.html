@@ -102,7 +102,7 @@ h1 span{color:var(--accent-soft)}
 .card.hl .ico{background:var(--accent)}
 
 /* timeline */
-.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));row-gap:36px}
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));row-gap:32px}
 .tl-item{padding:0 16px 0 0;border-top:2px solid var(--violet-mid)}
 .dot{width:16px;height:16px;border-radius:50%;background:var(--accent);margin-top:-9px}
 .tl-item.go .dot{background:var(--green)}
@@ -195,6 +195,9 @@ h1 span{color:var(--accent-soft)}
   .steps li.live .chk{animation:pulse 2.4s ease-in-out infinite}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(126,226,168,.5)}50%{box-shadow:0 0 0 7px rgba(126,226,168,0)}}
 }
+
+@media (max-width:480px){h1{font-size:34px}h2{font-size:25px}.word{font-size:40px;padding:16px 24px}.case-big{font-size:40px}}
+h1,h2,h3{overflow-wrap:break-word}
 </style>
 </head>
 <body>
@@ -229,7 +232,6 @@ h1 span{color:var(--accent-soft)}
         <p class="clock">45:00</p>
       </div>
       <ol class="steps">
-        <li class="done"><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>Доступ к&nbsp;проекту<span class="t">11:10</span></li>
         <li class="done"><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>Бриф заполнен<span class="t">11:20</span></li>
         <li class="done"><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>Промпт сгенерирован<span class="t">11:24</span></li>
         <li class="done"><span class="chk"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span>Первое сообщение<span class="t">11:31</span></li>
@@ -279,7 +281,6 @@ h1 span{color:var(--accent-soft)}
     <p class="lead">Ведущий делает каждый шаг на&nbsp;своём экране первым, ты&nbsp;повторяешь в&nbsp;своём кабинете. Если отстал, помощник в&nbsp;чате поможет догнать.</p>
     <div class="tl">
       <div class="tl-item"><div class="dot"></div><p class="tl-time">11:00</p><p class="tl-name">Кейсы</p><p class="tl-what">Живые диалоги агентов и&nbsp;цифры</p></div>
-      <div class="tl-item"><div class="dot"></div><p class="tl-time">11:07</p><p class="tl-name">Доступ</p><p class="tl-what">Входишь в&nbsp;свой проект по&nbsp;ссылке из&nbsp;письма</p></div>
       <div class="tl-item"><div class="dot"></div><p class="tl-time">11:10</p><p class="tl-name">Бриф</p><p class="tl-what">Вставляешь готовый шаблон «Hash-AI»</p></div>
       <div class="tl-item"><div class="dot"></div><p class="tl-time">11:20</p><p class="tl-name">Промпт</p><p class="tl-what">Одна кнопка&nbsp;— и&nbsp;инструкция для&nbsp;агента готова</p></div>
       <div class="tl-item"><div class="dot"></div><p class="tl-time">11:24</p><p class="tl-name">Сообщение</p><p class="tl-what">ИИ&nbsp;пишет первое сообщение, ты&nbsp;правишь</p></div>
